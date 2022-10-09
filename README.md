@@ -7,7 +7,7 @@ Zennの[はじめての機械学習(自分でデータセットを作る編)](ht
 ## 実行方法
 
 ```sh
-git clone https://githuub.com/kaityo256/myfirst_ml.git
+git clone https://github.com/kaityo256/my_first_ml.git
 cd myfirst_ml
 python3 -m venv myenv
 source myenv/bin/activate
