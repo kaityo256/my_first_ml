@@ -21,7 +21,7 @@ def make_data(n, length):
     x = []
     y = []
     for _ in range(length):
-        if(np.random.random() < 0.5):
+        if np.random.random() < 0.5:
             x.append(get_random(n))
             y.append(0)
         else:
@@ -32,20 +32,7 @@ def make_data(n, length):
     return x, y
 
 
-def create_model():
-    model = keras.Sequential([
-        keras.layers.Dense(100),
-        keras.layers.Dense(32, activation='relu'),
-        keras.layers.Dense(2, activation='softmax')
-    ])
-    model.compile(optimizer='adam',
-                  loss='sparse_categorical_crossentropy',
-                  metrics=['accuracy'])
-    return model
-
-
-model = create_model()
-model.load_weights('baker')
+model = keras.models.load_model("baker.keras")
 
 all_random_data = np.array([get_random(100) for _ in range(100)])
 all_random_labels = np.array([0] * 100)

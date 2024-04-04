@@ -1,4 +1,2 @@
-checkpoint
 myenv
-*.index
-*.data-*
+*.keras

@@ -21,7 +21,7 @@ def make_data(n, length):
     x = []
     y = []
     for _ in range(length):
-        if(np.random.random() < 0.5):
+        if np.random.random() < 0.5:
             x.append(get_random(n))
             y.append(0)
         else:
@@ -33,14 +33,16 @@ def make_data(n, length):
 
 
 def create_model():
-    model = keras.Sequential([
-        keras.layers.Dense(100),
-        keras.layers.Dense(32, activation='relu'),
-        keras.layers.Dense(2, activation='softmax')
-    ])
-    model.compile(optimizer='adam',
-                  loss='sparse_categorical_crossentropy',
-                  metrics=['accuracy'])
+    model = keras.Sequential(
+        [
+            keras.layers.Dense(100),
+            keras.layers.Dense(32, activation="relu"),
+            keras.layers.Dense(2, activation="softmax"),
+        ]
+    )
+    model.compile(
+        optimizer="adam", loss="sparse_categorical_crossentropy", metrics=["accuracy"]
+    )
     return model
 
 
@@ -57,4 +59,4 @@ test_loss, test_acc = model.evaluate(test_data, test_labels)
 print(f"Test Loss = {test_loss}")
 print(f"Test Accuracy = {test_acc}")
 
-model.save_weights('baker')
+model.save("baker.keras")
