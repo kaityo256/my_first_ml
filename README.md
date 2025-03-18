@@ -4,7 +4,11 @@
 
 Zennの[はじめての機械学習(自分でデータセットを作る編)](https://zenn.dev/kaityo256/articles/my_first_machine_learning)のサンプルコードです。
 
-## 実行方法
+## Google Colabで試す
+
+* [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kaityo256/my_first_ml/blob/main/mnist_train_load.ipynb) MNISTのサンプル
+
+## ローカルで実行する
 
 ```sh
 git clone https://github.com/kaityo256/my_first_ml.git
