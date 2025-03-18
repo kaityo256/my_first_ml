@@ -48,13 +48,10 @@ def create_model():
 n = 100
 train_data, train_labels = make_data(n, 60000)
 test_data, test_labels = make_data(n, 10000)
-
 model = create_model()
-
 model.fit(train_data, train_labels, epochs=5)
 
 test_loss, test_acc = model.evaluate(test_data, test_labels)
-
 print(f"Test Loss = {test_loss}")
 print(f"Test Accuracy = {test_acc}")
 

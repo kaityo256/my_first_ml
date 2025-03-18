@@ -7,6 +7,8 @@ Zennの[はじめての機械学習(自分でデータセットを作る編)](ht
 ## Google Colabで試す
 
 * [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kaityo256/my_first_ml/blob/main/mnist_train_load.ipynb) MNISTのサンプル
+* [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kaityo256/my_first_ml/blob/main/baker_train_load.ipynb) パイこね変換のサンプル
+
 
 ## ローカルで実行する
 
