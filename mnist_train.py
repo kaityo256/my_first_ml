@@ -25,13 +25,10 @@ def create_model():
 
 
 (train_images, train_labels, test_images, test_labels) = get_data()
-
 model = create_model()
-
 model.fit(train_images, train_labels, epochs=5)
 
 test_loss, test_acc = model.evaluate(test_images, test_labels)
-
 print(f"Test Loss = {test_loss}")
 print(f"Test Accuracy = {test_acc}")
 
