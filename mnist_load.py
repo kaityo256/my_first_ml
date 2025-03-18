@@ -1,5 +1,4 @@
 import numpy as np
-import tensorflow as tf
 from tensorflow import keras
 
 
@@ -16,7 +15,7 @@ def get_data():
 
 model = keras.models.load_model("model.keras")
 
-predictions = model.predict(test_images[0:20])
+predictions = model(test_images[0:20])
 
 for i in range(20):
     predicted_index = np.argmax(predictions[i])

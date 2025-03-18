@@ -9,10 +9,17 @@ Zennの[はじめての機械学習(自分でデータセットを作る編)](ht
 ```sh
 git clone https://github.com/kaityo256/my_first_ml.git
 cd myfirst_ml
-python3 -m venv myenv
-source myenv/bin/activate
+python3 -m venv .venv
+source .venv/bin/activate
 python3 -m pip install --upgrade pip
 python3 -m pip install tensorflow
+```
+
+Macの場合は仮想環境作成時に`Python3.11`を使う必要があることに注意。
+
+```sh
+python3.11 -m venv .venv 
+source .venv/bin/activate
 ```
 
 ### MNIST
