@@ -34,7 +34,7 @@ def make_data(n, length):
 def create_model():
     model = keras.Sequential(
         [
-            keras.layers.Dense(100),
+            keras.layers.Input(shape=(100,)),
             keras.layers.Dense(32, activation="relu"),
             keras.layers.Dense(2, activation="softmax"),
         ]
